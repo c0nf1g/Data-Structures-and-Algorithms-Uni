@@ -1,3 +1,6 @@
+from read_file import read_file
+
+
 def dfs(v, visited, stack, graph, cycle_array):
     visited[v] = True
     stack[v] = True
@@ -15,9 +18,9 @@ def dfs(v, visited, stack, graph, cycle_array):
     return False
 
 
-def check_cycle(graph, vertices_num, v):
-    visited = [False] * vertices_num
-    stack = [False] * vertices_num
+def check_cycle(graph, vertics_num, v):
+    visited = [False] * (len(graph) + 1)
+    stack = [False] * (len(graph) + 1)
     cycle_array = []
 
     if not visited[v]:
