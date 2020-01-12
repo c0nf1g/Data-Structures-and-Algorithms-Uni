@@ -1,4 +1,4 @@
-BubbleSort and QickSort 
+BubbleSort and QuickSort 
 ========================
 
 Create a Clip class which contains next fields:
